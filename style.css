@@ -10,6 +10,7 @@ body{
 
 ul{
     margin:2rem;
+    list-style: none;
 }
 
 a{
