@@ -7,6 +7,32 @@
     <title>Aula 1</title>
 </head>
 <body>
-    
+    <form>
+        <label for="entrada_parimpar">Insira Seu Número: </label>
+        <input type="number" id="entrada_parimpar">
+    </form>
+    <p id="resposta_parimpar"> Par ou Impar? </p>
+
+    <form>
+        <label for="entrada_primo">Insira Seu Número: </label>
+        <input type="number" min="0" step="1"  id="entrada_primo">
+        <button type="button" id="envio_primo">Enviar</button>
+    </form>
+    <p id="resposta_primo">É Primo?</p>
+
+    <form>
+        <label for="entrada_fatorial">Insira seu Número: </label>
+        <input type="number" min="0" step="1" id="entrada_fatorial">
+        <button type="button" id="envio_fatorial">Enviar</button>
+    </form>
+
+    <form> 
+        <label for="entrada_tipo">Insira seu Dado: </label>
+        <input type="text" id="entrada_tipo">
+        <button type="button" id="envio_tipo">Verificar Tipo</button>
+    </form>
+    <p id="resposta_tipo">null</p>
+
+    <script src="aula_1.js"></script>
 </body>
 </html>

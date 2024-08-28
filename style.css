@@ -16,3 +16,15 @@ ul{
 a{
     text-decoration: none;
 }
+
+.red{
+    color:#ff2400;
+}
+
+.green{
+    color: #03c04a;
+}
+
+.gold{
+    color: #ca9100;
+}
