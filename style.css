@@ -1,0 +1,17 @@
+*{margin:0; padding:0; font-family: 'Times New Roman', Times, serif;}
+
+
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    margin:2rem;
+}
+
+a{
+    text-decoration: none;
+}
