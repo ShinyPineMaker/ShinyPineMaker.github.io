@@ -1,0 +1,89 @@
+*{padding:0; margin:0; font-family: Arial, Helvetica, sans-serif;}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+h2{
+    padding-right: 60%;
+    margin:1.5rem 0;
+    font-size: 26px;
+    color:#000;
+}
+
+label{
+    font-size: 10px;
+    color: #222;
+    opacity: 90%;
+}
+
+button{
+    font-size: 12px;
+    background-color: #eee;
+    border-color: #aaa;
+    border-radius: 4px;
+    width: 10%;
+    height: 7%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    margin:1.33rem;
+}
+
+.container-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.container-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-btn button{
+    margin: 1rem;
+}
+
+.row{
+    margin:0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.resposta{
+    color: #ff0000;
+}
+
+.hidden{
+    display: none;
+}
+
+input[type=text]{
+    border-style: none none solid none;
+}
+
+input[type=date]{
+    border-style: solid;
+}
