@@ -14,6 +14,17 @@ class Aluno extends Pessoa{
         super(nome, email, data_nasc, fixo, celular, matricula);
         this.curso = curso;
     }
+    getArray(){
+        let listaPropriedades = new Array;
+        listaPropriedades.push(this.nome);
+        listaPropriedades.push(this.email);
+        listaPropriedades.push(this.data_nasc);
+        listaPropriedades.push(this.fixo);
+        listaPropriedades.push(this.celular);
+        listaPropriedades.push(this.curso);
+        listaPropriedades.push(this.matricula);
+        return listaPropriedades;
+    }
 }
 
 class Professor extends Pessoa{
@@ -21,6 +32,18 @@ class Professor extends Pessoa{
         super(nome, email, data_nasc, fixo, celular, matricula);
         this.area = area;
         this.lattes = lattes;
+    }
+    getArray(){
+        let listaPropriedades = new Array;
+        listaPropriedades.push(this.nome);
+        listaPropriedades.push(this.email);
+        listaPropriedades.push(this.data_nasc);
+        listaPropriedades.push(this.fixo);
+        listaPropriedades.push(this.celular);
+        listaPropriedades.push(this.matricula);
+        listaPropriedades.push(this.area);
+        listaPropriedades.push(this.lattes);
+        return listaPropriedades;
     }
 }
 
@@ -224,7 +247,13 @@ validarLattes = () => {
 
 lattes.addEventListener('blur', validarLattes);
 
-let contd = 0
+let contd = localStorage.getItem("contd");
+if (contd == null){
+    contd = 0;
+    localStorage.setItem("contd", contd);
+}
+contd = parseInt(contd);
+
 salvarDados = (event) => {
     event.preventDefault();
 

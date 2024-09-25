@@ -77,6 +77,9 @@ p{
     font-size: 10px;
 }
 
+h4{
+    font-weight: normal;
+}
 .hidden{
     display: none;
 }
