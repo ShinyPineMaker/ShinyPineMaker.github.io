@@ -8,7 +8,7 @@
 </head>
 <body>
     <h2>Formulário de Cadastro:</h2>
-    <form method="POST" action="Aula_4.html">
+    <form method="POST" action="Aula_4.html" id="form">
         <div class="container-row">
             <div class="row">
                 <label for="nome">Nome: </label>
@@ -20,25 +20,29 @@
             <div class="row">
                 <label for="email">Email: </label>
                 <input type="text" id="email" placeholder="fulano.com" />
+                <p id="validacao-email"></p>
             </div>
             <div class="row">
                 <label for="data-nasc">Data de Nascimento: </label>
                 <input type="date" id="data-nasc" />
+                <p id="validacao-data-nasc"></p>
             </div>
         </div>
         <div class="container-row">
             <div class="row">
                 <label for="telefone-fixo">Telefone Fixo: </label> 
                 <input type="text" id="telefone-fixo" placeholder="(99)9999-9999" />
+                <p id="validacao-fixo"></p>
             </div>
             <div class="row">
                 <label for="telefone-fixo">Telefone Celular: </label>
-                <input type="text" id="telefone-fixo" placeholder="(99)9999-9999" />
+                <input type="text" id="telefone-celular" placeholder="(99)9999-9999" />
+                <p id="validacao-celular"></p>
             </div>
             <div class="row">
                 <ul>
                     <li>
-                        <input type="radio" id="professor" name="usuario" value="professor" required/>
+                        <input type="radio" id="professor" name="usuario" value="professor" checked required/>
                         <label for="professor">Professor</label>
                     </li>    
                     <li>
@@ -51,24 +55,29 @@
         <div class="container-row">    
             <div class="row">
                 <label id="area-curso-label" for="area-curso">Área:</label>
-                <input type="text" id="area-curso" placeholder="Digite sua área da atuação" o()"/>
+                <input type="text" id="area-curso" placeholder="Digite sua área da atuação"/>
+                <p id="validacao-area-curso"></p>
             </div>
             <div class="row">
                 <label for="matricula">Matrícula:</label>
                 <input type="text" id="matricula" placeholder="Digite sua matrícula" />
+                <p id="validacao-matricula"></p>            
             </div>
         </div>
         <div class="container-row">
             <div class="row" id="row-lattes">
                 <label for="lattes">Lattes:</label>
                 <input type="text" id="lattes" placeholder="Digite aqui o endereço para seu Lattes" />
+                <p id="validacao-lattes"></p>
             </div>
         </div>
         <div class="container-btn">
-            <button type="submit" id="enviar" onsubmit="ValidarFormulario()">Enviar</button>
+            <button type="submit" id="enviar">Enviar</button>
             <button type="reset" id="redefinir">redefinir</button>
         </div>
     </form>
+
+    <a href="Aula_4.5.html">Ver Pessoas Registradas</a>
 
     <script src="Scripts/aula_4.js"></script>
 </body>
