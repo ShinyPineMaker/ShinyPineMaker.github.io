@@ -254,9 +254,46 @@ if (contd == null){
 }
 contd = parseInt(contd);
 
-salvarDados = (event) => {
-    event.preventDefault();
 
+validarDados = (event) => {
+    event.preventDefault();
+    if (registro == "Professor"){
+        let dados = [
+            nome.value, 
+            email.value, 
+            data_n.value, 
+            tel_f.value, 
+            tel_c.value, 
+            matricula.value, 
+            area_curso.value, 
+            lattes.value
+        ]
+
+        const camposVazios = dados.filter(element => element.length == 0);
+        if (camposVazios) {
+            return false;
+        }
+        return salvarDados();
+    }
+    if (registro == "Aluno"){
+        let dados = [
+            nome.value,
+            email.value,
+            data_n.value,
+            tel_f.value,
+            tel_c.value,
+            matricula.value,
+            area_curso.value
+        ]
+
+        const camposVazios = dados.filter(element => element.length == 0);
+        if (camposVazios) {
+            return false;
+        }
+        return salvarDados();
+    }
+}
+salvarDados = () => {
     if (registro == "Professor"){
         p = new Professor(
             nome.value, 
@@ -288,4 +325,4 @@ salvarDados = (event) => {
     form.reset();
 }
 
-enviar.addEventListener('click', salvarDados);
+enviar.addEventListener('click', validarDados);
