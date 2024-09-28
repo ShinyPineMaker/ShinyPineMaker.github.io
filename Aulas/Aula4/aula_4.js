@@ -269,9 +269,11 @@ validarDados = (event) => {
             lattes.value
         ]
 
-        const camposVazios = dados.filter(element => element.length == 0);
+        let camposVazios = dados.filter(element => element.length == 0);
+        console.log(camposVazios.length == 0)
         if (camposVazios) {
             form.reset();
+            camposVazios = [];
             return false;
         }
         return salvarDados();
@@ -287,9 +289,11 @@ validarDados = (event) => {
             area_curso.value
         ]
 
-        const camposVazios = dados.filter(element => element.length == 0);
-        if (camposVazios) {
+        let camposVazios = dados.filter(element => element.length == 0);
+        console.log(camposVazios)
+        if (camposVazios.length == 0) {
             form.reset();
+            camposVazios = [];
             return false;
         }
         return salvarDados();
