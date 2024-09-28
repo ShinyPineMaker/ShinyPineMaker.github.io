@@ -270,8 +270,8 @@ validarDados = (event) => {
         ]
 
         let camposVazios = dados.filter(element => element.length == 0);
-        console.log(camposVazios.length == 0)
-        if (camposVazios) {
+        console.log(camposVazios)
+        if (camposVazios.length == 0) {
             form.reset();
             camposVazios = [];
             return false;
