@@ -271,6 +271,7 @@ validarDados = (event) => {
 
         const camposVazios = dados.filter(element => element.length == 0);
         if (camposVazios) {
+            form.reset();
             return false;
         }
         return salvarDados();
@@ -288,11 +289,13 @@ validarDados = (event) => {
 
         const camposVazios = dados.filter(element => element.length == 0);
         if (camposVazios) {
+            form.reset();
             return false;
         }
         return salvarDados();
     }
 }
+
 salvarDados = () => {
     if (registro == "Professor"){
         p = new Professor(

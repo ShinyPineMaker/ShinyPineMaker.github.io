@@ -3,13 +3,18 @@ const addPessoas = (lista) => {
     lista.forEach(pessoa => {
         if (pessoa.lattes){
             //professor
-            let entry = document.createElement('li');
-            entry.appendChild(document.createTextNode([pessoa.nome, pessoa.email, pessoa.data_nasc, pessoa.fixo, pessoa.celular, pessoa.matricula]))
+            let entry = document.createElement('tr');
+            pessoa.forEach(item =>{
+                let dado = document.createElement('th');
+                dado.appendChild(document.createTextNode(dado));
+                entry.appendChild(dado);
+            })
             document.querySelector("#array-professores").appendChild(entry);
+            
         }
         else{
             //aluno
-            let entry = document.createElement('li');
+            let entry = document.createElement('tr');
             entry.appendChild(document.createTextNode([pessoa.nome, pessoa.email, pessoa.data_nasc, pessoa.fixo, pessoa.celular, pessoa.matricula]))
             document.querySelector("#array-alunos").appendChild(entry);
         }
