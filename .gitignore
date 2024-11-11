@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+Aulas/react/my-app/node_modules
+Aulas/react/my-app/.pnp
+Aulas/react/my-app/.pnp.js
+
+# testing
+Aulas/react/my-app/coverage
+
+# production
+Aulas/react/my-app/build
+
+# misc
+Aulas/react/my-app/.DS_Store
+Aulas/react/my-app/.env.local
+Aulas/react/my-app/.env.development.local
+Aulas/react/my-app/.env.test.local
+Aulas/react/my-app/.env.production.local
+
+Aulas/react/my-app/npm-debug.log*
+Aulas/react/my-app/yarn-debug.log*
+Aulas/react/my-app/yarn-error.log*
